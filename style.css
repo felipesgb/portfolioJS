@@ -10,5 +10,108 @@ a {
     text-decoration: none;
 }
 
+body {
+  background-color: #FFFAF1;
+}
+
+.navbar {
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.navbar a {
+  color: #811FBA;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: "Space grotesk";
+  background: linear-gradient(to right, #3a8dcb, #AB57D4);
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
 
+
+
+
+
+.apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12%;
+  margin-top: 210px;
+}
+
+.apresentacao_textos{
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.apresentacao_textos h1 {
+  color: black;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Space grotesk";
+  
+}
+
+.apresentacao_textos h2 {
+  font-size: 96px;
+  font-style: bold;
+  font-weight: 700;
+  font-family: "Space grotesk";
+  background: linear-gradient(to right, #3a8dcb, #AB57D4);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.apresentacao_textos h3{
+  color: black;
+  font-size: 36px;
+  font-style: thin 100;
+  font-weight: 275;
+  line-height: 1;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-family: "JetBrains Mono";
+}
+
+.apresentacao_botoes {
+  display: flex;
+  gap: 20px;
+}
+
+.apresentacao_botoes a{
+  padding: 15px;
+  border-radius: 40px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(to right, #3a8dcb, #AB57D4);
+  color: white;
+  font-family: "Space grotesk";
+  transition: transform 0.2s ease;
+}
+
+.apresentacao_botoes a:hover {
+  transform: scale(1.05) ;
+}
+
+.apresentacao img {
+  transition: transform 0.5s ease;
+  width: 25%;
+  height: 20%;
+
+}
+
+.apresentacao img:hover {
+  transform: scale(1.15);
+}
