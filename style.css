@@ -14,12 +14,32 @@ body {
   background-color: #FFFAF1;
 }
 
+html {
+  scroll-behavior: smooth;  
+  scroll-padding-top: 300px;
+}
+
+main{
+  padding-top: 110px;
+}
+
+
 .navbar {
   display: flex;
   padding: 40px;
   justify-content: center;
   align-items: center;
   gap: 50px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFFAF1;
+  border-radius: 50px;
+  padding: 15px 40px;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: fit-content;
 }
 
 .navbar a {
@@ -29,14 +49,10 @@ body {
   font-weight: 700;
   line-height: normal;
   font-family: "Space grotesk";
-  background: linear-gradient(to right, #3a8dcb, #AB57D4);
+  background: linear-gradient(135deg, hsla(162, 41%, 32%, 1) 23%, hsla(188, 80%, 26%, 1) 100%);
   -webkit-background-clip: text;
   color: transparent;
 }
-
-
-
-
 
 
 .apresentacao {
@@ -67,7 +83,7 @@ body {
   font-style: bold;
   font-weight: 700;
   font-family: "Space grotesk";
-  background: linear-gradient(to right, #3a8dcb, #AB57D4);
+  background: linear-gradient(135deg, hsla(162, 41%, 32%, 1) 23%, hsla(188, 80%, 26%, 1) 100%);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -95,7 +111,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  background: linear-gradient(to right, #3a8dcb, #AB57D4);
+  background: linear-gradient(135deg, hsla(162, 41%, 32%, 1) 23%, hsla(188, 80%, 26%, 1) 100%);
   color: white;
   font-family: "Space grotesk";
   transition: transform 0.2s ease;
@@ -107,11 +123,443 @@ body {
 
 .apresentacao img {
   transition: transform 0.5s ease;
-  width: 25%;
-  height: 20%;
-
 }
 
 .apresentacao img:hover {
   transform: scale(1.15);
+}
+
+
+.sobre_mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.sobre_mim h1{
+    color: #811FBA;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: "Space grotesk";
+    background: linear-gradient(135deg, hsla(162, 41%, 32%, 1) 23%, hsla(188, 80%, 26%, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.sobre_mim p {
+    color: black;
+    font-size: 28px;
+    text-align: justify;
+    font-family: "Space grotesk";
+}
+
+
+.formacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.formacao h1 {
+    color: #811FBA;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: "Space grotesk";
+    background: linear-gradient(135deg, hsla(162, 41%, 32%, 1) 23%, hsla(188, 80%, 26%, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.formacao p {
+    color: black;
+    font-size: 30px;
+    text-align: justify;
+    font-family: "Space grotesk";
+}
+
+
+.cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    gap: 15px;
+}
+
+.cursos h1 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Space Grotesk";
+    background: linear-gradient(135deg, hsla(162, 41%, 32%, 1) 23%, hsla(188, 80%, 26%, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.cursos_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.curso_card {
+    background-color: #F5EFE6;
+    border-radius: 12px;
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curso_card:hover {
+    transform: scale(1.03);
+    border: 1px solid #298d62;
+}
+
+.curso_card img {
+    width: 100%;
+    border-radius: 5px;
+    height: 200px;
+}
+
+.curso_card h2 {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Space Grotesk";
+    text-align: center;
+}
+
+.curso_subtitulo {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Space Grotesk";
+    text-align: center;
+}
+
+.curso_descricao {
+    font-size: 15px;
+    font-family: "Space Grotesk";
+    text-align: justify;
+}
+
+.curso_card a {
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    background: linear-gradient(135deg, hsla(162, 41%, 32%, 1) 23%, hsla(188, 80%, 26%, 1) 100%);
+    color: white;
+    font-family: "Space Grotesk";
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.curso_card a:hover {
+    transform: scale(1.05);
+}
+
+
+.habilidades {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 300px;
+    gap: 15px;
+}
+
+.habilidades h1 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: "Space grotesk";
+    background: linear-gradient(135deg, hsla(162, 41%, 32%, 1) 23%, hsla(188, 80%, 26%, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.habilidades_icones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+    max-width: 1200px;
+}
+
+.habilidades_cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5EFE6; 
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 20px;
+    width: 190px;
+    height: 200px;
+}
+
+.habilidades_cards img {
+    width: 100px;
+    height: 100px;
+}
+
+.habilidades_cards p{
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Space Grotesk";
+}
+
+.habilidades_cards:hover {
+    transform: scale(1.1);
+    border: 1px solid #298d62;
+}
+
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    gap: 15px;
+    margin-bottom: 300px;
+}
+
+.projetos h1 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Space Grotesk";
+    background: linear-gradient(135deg, hsla(162, 41%, 32%, 1) 23%, hsla(188, 80%, 26%, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.projetos_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.projeto_card {
+    background-color: #F5EFE6;
+    border-radius: 12px;
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto_card:hover {
+    transform: scale(1.03);
+    border: 1px solid #298d62;
+}
+
+.projeto_card img {
+    width: 100%;
+    border-radius: 5px;
+    height: 200px;
+}
+
+.projeto_card h2 {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: "Space Grotesk";
+}
+
+.projeto_descricao, .projeto_tecnologias {
+    font-size: 16px;
+    font-family: "Space Grotesk";
+    text-align: justify;
+}
+
+.projeto_botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.projeto_botoes a {
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    background: linear-gradient(135deg, hsla(162, 41%, 32%, 1) 23%, hsla(188, 80%, 26%, 1) 100%);
+    color: white;
+    font-family: "Space Grotesk";
+    transition: transform 0.2s ease;
+}
+
+.projeto_botoes a:hover {
+    transform: scale(1.05);
+}
+
+
+.contato{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.contato h1{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Space Grotesk";
+    background: linear-gradient(135deg, hsla(162, 41%, 32%, 1) 23%, hsla(188, 80%, 26%, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.contato_icones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 0px;
+}
+
+.contato_icones img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contato_icones img:hover {
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        gap: 20px;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 60px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .apresentacao_textos h1 {
+        font-size: 28px;
+    }
+
+    .apresentacao_textos h2 {
+        font-size: 60px;
+    }
+
+    .apresentacao_textos h3 {
+        font-size: 22px;
+    }
+
+    .apresentacao_botoes {
+        justify-content: center;
+    }
+
+    .apresentacao img {
+        width: 80%;
+    }
+
+    .sobre_mim {
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .sobre_mim h1 {
+        font-size: 36px;
+    }
+
+    .sobre_mim p {
+        font-size: 18px;
+    }
+
+    .formacao {
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .formacao h1 {
+        font-size: 36px;
+    }
+
+    .formacao p {
+        font-size: 20px;
+    }
+
+    .cursos {
+        margin-top: 100px;
+        padding: 0 20px;
+    }
+
+    .curso_card {
+        width: 100%;
+    }
+
+    .habilidades {
+        margin-top: 100px;
+        padding: 0 20px;
+    }
+
+    .habilidades_cards {
+        width: 140px;
+        height: 160px;
+    }
+
+    .habilidades_cards p {
+        font-size: 18px;
+    }
+
+    .habilidades_cards img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .projetos {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        padding: 0 20px;
+    }
+
+    .projeto_card {
+        width: 100%;
+    }
+
+    .contato_icones {
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
