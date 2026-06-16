@@ -14,6 +14,14 @@ const projetosPadrao = [
         imagem: "./img/universidade_projeto.jpeg",
         github: "https://github.com/felipesgb/desafio1-designDigital",
         site: "https://desafio1-design-digital.vercel.app/"
+    },
+    {
+        nome: "Gerenciamento de Normas Técnicas",
+        descricao: "Projeto acadêmico desenvolvido em grupo para a criação de um sistema de gerenciamento de normas técnicas da empresa Akaer. Participei do desenvolvimento da solução, contribuindo para a organização das funcionalidades e da interface, com foco em facilitar o acesso, a consulta e o gerenciamento das informações técnicas de forma prática e eficiente.",
+        tecnologias: "React, Node.js, Prisma, TS",
+        imagem: "./img/akaer.jpeg",
+        github: "https://github.com/Giommn/CodeWave-2DSM-API",
+        site: "https://github.com/Giommn/CodeWave-2DSM-API"
     }
 ];
 

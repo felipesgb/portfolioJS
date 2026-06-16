@@ -28,7 +28,7 @@ let projetos = [
     imagem: "./img/universidade_projeto.jpeg",
     github: "https://github.com/felipesgb/desafio1-designDigital",
     site: "https://desafio1-design-digital.vercel.app/",
-  },
+  }
 ];
 
 let habilidades = [
